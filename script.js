@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     async function fetchReply(message) {
         appendMessage('bot', '🤔 Typing...');
         try {
-            const response = await fetch('https://your-vercel-deployment-url.com/api/chat', {
+            const response = await fetch('https://chatbotmte.vercel.app/api/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: message })
