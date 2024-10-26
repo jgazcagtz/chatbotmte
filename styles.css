@@ -1,0 +1,192 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', Arial, sans-serif;
+    background-color: #d6d6d6;
+    color: #333;
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Adds subtle texture to background */
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #ffffff;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* Adds subtle wood texture */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.chat-header {
+    background-color: #e63946;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(135deg, #e63946, #d62828);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.chat-header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.chat-header p {
+    font-size: 14px;
+}
+
+.chat-header a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.chat-window {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-image: linear-gradient(to bottom, #f7f7f7, #eeeeee);
+}
+
+.chat-message {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.chat-message.user {
+    justify-content: flex-end;
+}
+
+.chat-message.bot {
+    justify-content: flex-start;
+}
+
+.chat-message p {
+    max-width: 70%;
+    padding: 15px;
+    border-radius: 15px;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.4;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chat-message.user p {
+    background-color: #fca5a5;
+    color: #333333;
+    border-bottom-right-radius: 0;
+    background-image: linear-gradient(to right, #ffb3b3, #f77f7f);
+}
+
+.chat-message.bot p {
+    background-color: #cccccc;
+    color: #333333;
+    border-bottom-left-radius: 0;
+    background-image: linear-gradient(to right, #e0e0e0, #bfbfbf);
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    background-color: #ffffff;
+    border-top: 1px solid #dddddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 25px;
+    outline: none;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png'); /* Textured input */
+}
+
+.chat-input button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #d62828;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-input button:hover {
+    background-color: #b71c1c;
+    transform: scale(1.05);
+}
+
+.chat-input button svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.contact-info {
+    padding: 15px;
+    text-align: center;
+    background-color: #d62828;
+    color: #ffffff;
+    font-size: 14px;
+    background-image: linear-gradient(135deg, #d62828, #b71c1c);
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.whatsapp-integration {
+    text-align: center;
+    padding: 15px;
+    background-color: #128c7e;
+    background-image: linear-gradient(135deg, #1ebe73, #0e7d63);
+}
+
+.whatsapp-integration a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.whatsapp-integration a:hover {
+    text-decoration: underline;
+}
+
+/* Scrollbar Styles */
+.chat-window::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+    background-color: #999999;
+    border-radius: 4px;
+}
+
+.chat-window::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+}
