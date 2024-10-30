@@ -29,12 +29,18 @@ a {
 }
 
 .chat-header {
-    background-color: #e63946;
+    background-color: #ff3131; /* Updated background color */
     color: #ffffff;
     padding: 20px;
     text-align: center;
-    background-image: linear-gradient(135deg, #e63946, #d62828);
+    /* Removed previous background-image */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    font-family: 'League Spartan', Arial, sans-serif;
+}
+
+.chat-header img {
+    max-width: 50px;
+    margin-bottom: 10px;
 }
 
 .chat-header h1 {
@@ -80,6 +86,7 @@ a {
     font-size: 16px;
     line-height: 1.4;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'League Spartan', Arial, sans-serif;
 }
 
 .chat-message.user p {
@@ -111,6 +118,7 @@ a {
     border-radius: 25px;
     outline: none;
     background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png'); /* Textured input */
+    font-family: 'League Spartan', Arial, sans-serif;
 }
 
 .chat-input button {
@@ -129,6 +137,7 @@ a {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'League Spartan', Arial, sans-serif;
 }
 
 .chat-input button:hover {
@@ -145,10 +154,11 @@ a {
 .contact-info {
     padding: 15px;
     text-align: center;
-    background-color: #d62828;
+    background-color: #ff3131; /* Updated background color */
     color: #ffffff;
     font-size: 14px;
-    background-image: linear-gradient(135deg, #d62828, #b71c1c);
+    /* Removed previous background-image */
+    font-family: 'League Spartan', Arial, sans-serif;
 }
 
 .contact-info p {
@@ -165,6 +175,7 @@ a {
     padding: 15px;
     background-color: #128c7e;
     background-image: linear-gradient(135deg, #1ebe73, #0e7d63);
+    font-family: 'League Spartan', Arial, sans-serif;
 }
 
 .whatsapp-integration a {
